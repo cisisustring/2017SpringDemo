@@ -12,7 +12,7 @@ public class TestDao {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		fail("测试专用");
 	}
 
 }
