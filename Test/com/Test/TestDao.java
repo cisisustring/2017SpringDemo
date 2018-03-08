@@ -12,7 +12,7 @@ public class TestDao {
 
 	@Test
 	public void test() {
-		fail("测试专用");
+		fail("测试");
 	}
 
 }
