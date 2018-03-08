@@ -20,14 +20,14 @@ public class AopServiceImpl implements IAopService {
 	@Override
 	public void beforeMethod(JoinPoint joinpoint) {
 		// TODO Auto-generated method stub
-		System.out.println(joinpoint.getSignature().getName() + "<---Æô¶¯Ç°µÄÈÕÖ¾");
+		System.out.println(joinpoint.getSignature().getName() + "æ–¹æ³•å");
 	}
 
 	@After("pointCut()")
 	@Override
 	public void afterMethod(JoinPoint joinpoint) {
 		// TODO Auto-generated method stub
-		System.out.println(joinpoint.getSignature().getName() + "<---Æô¶¯ºóµÄÈÕÖ¾");
+		System.out.println(joinpoint.getSignature().getName() + "<---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾");
 
 	}
 
