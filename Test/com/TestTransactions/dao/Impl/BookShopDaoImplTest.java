@@ -45,7 +45,7 @@ public class BookShopDaoImplTest {
 		String sql2 = "select stock from book_stock  where isbn=?";
 		int stock = jdbcTemplate.queryForObject(sql2, Integer.class, 1001);
 		if (stock <= 0) {
-			throw new RuntimeException("¿â´æ²»×ã");
+			throw new RuntimeException("åº“å­˜ä¸è¶³");
 		}
 
 		String sql = "update book_stock set stock=stock-1 where isbn=?";
@@ -57,7 +57,7 @@ public class BookShopDaoImplTest {
 		String sql2 = "select balance from account  where username=?";
 		int balance = jdbcTemplate.queryForObject(sql2, Integer.class, "aa");
 		if (balance < 80) {
-			throw new RuntimeException("Óà¶î²»×ã");
+			throw new RuntimeException("ä½™é¢ä¸è¶³");
 		}
 
 		String sql = "update account set balance=balance-? where username=?";
